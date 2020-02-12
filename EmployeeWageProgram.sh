@@ -1,5 +1,4 @@
 #!/bin/bash
-echo "WELCOME TO EMPLOYEE WAGE COMPUTATION PROBLEM"
 attendance=$$
 checkAttendance(){
 	attendance=$((RANDOM%2))
