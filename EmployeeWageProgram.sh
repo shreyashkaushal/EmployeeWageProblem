@@ -1,3 +1,8 @@
 #!/bin/bash
-echo "WELCOME TO EMPLOYEE WAGE COMPUTATION"
+partTimeWageCalculator(){
+	wage=20
+	partTimeHour=4
+	echo "$(($wage*$partTimeHour))"
+}
+partTimeWageCalculator
 
