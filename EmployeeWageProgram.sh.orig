@@ -12,13 +12,18 @@ checkAttendance(){
 	fi	
 }
 checkAttendance
-
-
-=======
 dailyFullyTimeWage(){
 wage=20
 fullHour=8
 echo "$(($wage*$fullHour))"
 }
 dailyFullyTimeWage
->>>>>>> useCase2-DailyWage
+=======
+partTimeWageCalculator(){
+	wage=20
+	partTimeHour=4
+	echo "$(($wage*$partTimeHour))"
+}
+partTimeWageCalculator
+>>>>>>> useCase3-PartTimeWage
+

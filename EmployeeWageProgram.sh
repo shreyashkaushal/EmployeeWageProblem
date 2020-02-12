@@ -10,11 +10,17 @@ checkAttendance(){
 		echo "Employee is absent today"
 	fi	
 }
+wage=20
 checkAttendance
 dailyFullyTimeWage(){
-wage=20
-fullHour=8
-echo "$(($wage*$fullHour))"
+    	fullHour=8
+    	echo "$(($wage*$fullHour))"
 }
 dailyFullyTimeWage
+partTimeWageCalculator(){
+	partTimeHour=4
+	echo "$(($wage*$partTimeHour))"
+}
+partTimeWageCalculator
+
 
