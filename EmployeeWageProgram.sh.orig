@@ -1,5 +1,7 @@
 #!/bin/bash
+<<<<<<< HEAD
 echo "WELCOME TO EMPLOYEE WAGE COMPUTATION "
+=======
 attendance=$$
 checkAttendance(){
 	attendance=$((RANDOM%2))
@@ -11,5 +13,5 @@ checkAttendance(){
 	fi	
 }
 checkAttendance
-
+>>>>>>> useCase1-AttendanceCheck
 
