@@ -49,23 +49,22 @@ do
            echo "enter valid choice" 
 	esac
 done
-
-=======
 #useCase5
+=======
+#useCase6
+wage=20
 partTimeWageCalculator(){
-	wage=20
 	partTimeHour=4
 	partTimeWage=$(($wage*$partTimeHour))
 	return $partTimeWage
 }
->>>>>>> useCase5-MonthlyWagesCalculation
 
 dailyFullyTimeWage(){
-	wage=20
 	fullHour=8
 	fullTimeWage=$(($wage*$fullHour))
 	return $fullTimeWage
 }
+>>>>>>> useCase6-CalculatingWagesForGivenCondition
 count=0
 checkAttendance(){
 	attendance=$((RANDOM%2))
@@ -96,7 +95,18 @@ do
 	case $input in
 		1) dailyFullyTimeWage
            ret=$?
+<<<<<<< HEAD
            echo $((ret*count))
+=======
+           #echo $((ret*count))
+           temp=$((count*8))
+           if(($temp<100))
+           then
+           	echo $((ret*count))
+           else
+           	echo $((ret*100))
+           	fi 
+>>>>>>> useCase6-CalculatingWagesForGivenCondition
           ;;
         2) partTimeWageCalculator
 			ret=$?
@@ -105,4 +115,8 @@ do
         *)
            echo "enter valid choice" 
 	esac
+<<<<<<< HEAD
 done
+=======
+done
+>>>>>>> useCase6-CalculatingWagesForGivenCondition
